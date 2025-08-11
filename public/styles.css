@@ -1,0 +1,116 @@
+ /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Full-screen centered layout */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #f5f7fa;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Form container */
+        .form {
+            background-color: #fff;
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        
+        /* Title */
+        .form-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Input fields */
+        .input-container {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        
+        .input-container label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            color: #555;
+        }
+        
+        .input-container input {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 0.95rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .input-container input:focus {
+            border-color: #4F46E5;
+            outline: none;
+        }
+        
+        /* Submit button */
+        .submit {
+            width: 100%;
+            padding: 0.85rem;
+            background-color: #4F46E5;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        
+        .submit:hover {
+            background-color: #4338CA;
+        }
+        
+        /* Signup link */
+        .signup-link {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        .signup-link a {
+            color: #4F46E5;
+            text-decoration: none;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #4F46E5; /* Solid color instead of gradient */
+        text-align: center;
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
