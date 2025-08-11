@@ -1,6 +1,10 @@
 import express from 'express';
+import bodyParser from 'body-parser';
+
 const __dirname = import.meta.dirname;
 const app = express();
+
+const urlEncoderParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static('public'));
 
 //Page Routes
@@ -26,12 +30,12 @@ app.get('/getStudent', (req, res) => {
     console.log("Response is: ", response);
     res.end(`Received Data: ${JSON.stringify(response)}`);
 });
-app.get('/getAdmin', (req, res) => {
+app.post('/postAdmin', urlEncoderParser, (req, res) => {
     var response = {
-        adminId: req.query.adminId,
-        firstName: req.query.firstName,
-        lastName: req.query.lastName,
-        department: req.query.department,
+        adminId: req.body.adminId,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        department: req.body.department,
     }
     console.log("Response is: ", response);
     res.end(`Received Data: ${JSON.stringify(response)}`);
