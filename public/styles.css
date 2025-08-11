@@ -114,3 +114,24 @@
             transform: translateY(0);
         }
     }
+
+    .buttons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 20px auto 0;
+        width: 150px;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        color: #eee;
+        font-weight: 700;
+        box-shadow: 1px 4px 10px 1px #eee;
+        background-color: #4F46E5;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+    }
