@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <form action="/postAdmin" method="post" class="form">
+    <form action="/postAdmin" method="post"  enctype="multipart/form-data" class="form">
         <p class="form-title">Admin Form</p>
         
         <div class="input-container">
@@ -28,6 +28,11 @@
             <input type="text" id="Department" name="department" placeholder="Department">
         </div>
         
+        <div class="input-container">
+            <label for ="file">Select File:</label>
+            <input type="file" id="file" name="file">
+        </div>
+
         <button type="submit" class="submit">
             Submit
         </button>
